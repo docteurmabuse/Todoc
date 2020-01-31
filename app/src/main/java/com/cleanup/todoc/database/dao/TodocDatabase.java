@@ -2,6 +2,7 @@ package com.cleanup.todoc.database.dao;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
+import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.ContentValues;
@@ -39,7 +40,12 @@ public abstract class TodocDatabase extends RoomDatabase {
                 super.onCreate(db);
 
                 ContentValues contentValues = new ContentValues();
-                //contentValues.put("id");
+                for (Project project : Project.getAllProjects()) {
+                    contentValues.put("id", project.getId());
+                    contentValues.put("name", project.getName());
+                    contentValues.put("color", project.getColor());
+                    db.insert("Project", OnConflictStrategy.IGNORE, contentValues);
+                }
             }
         };
 
