@@ -16,12 +16,11 @@ import com.cleanup.todoc.model.Task;
 public abstract class TodocDatabase extends RoomDatabase {
     //SINGLETON
     private static volatile TodocDatabase INSTANCE;
-
     //INSTANCE
     public static TodocDatabase getInstance(Context context) {
         if (INSTANCE == null) {
             synchronized (TodocDatabase.class) {
-                INSTANCE = Room.databaseBuilder(context.getApplicationContext(), TodocDatabase.class, "TodocDatabase.db").addCallback(prepopulateDatabase()).build();
+                INSTANCE = Room.databaseBuilder(context.getApplicationContext(), TodocDatabase.class, "myTodocDatabase.db").addCallback(prepopulateDatabase()).build();
             }
         }
         return INSTANCE;
@@ -38,10 +37,9 @@ public abstract class TodocDatabase extends RoomDatabase {
             @Override
             public void onCreate(@NonNull SupportSQLiteDatabase db) {
                 super.onCreate(db);
-
                 ContentValues contentValues = new ContentValues();
                 for (Project project : Project.getAllProjects()) {
-                    contentValues.put("id", project.getId());
+                    contentValues.put("project_id", project.getId());
                     contentValues.put("name", project.getName());
                     contentValues.put("color", project.getColor());
                     db.insert("Project", OnConflictStrategy.IGNORE, contentValues);

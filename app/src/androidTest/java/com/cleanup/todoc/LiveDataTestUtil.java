@@ -13,8 +13,8 @@ public class LiveDataTestUtil {
         final CountDownLatch latch = new CountDownLatch(1);
         Observer<T> observer = new Observer<T>() {
             @Override
-            public void onChanged(@Nullable T t) {
-                data[0] = t;
+            public void onChanged(@Nullable T o) {
+                data[0] = o;
                 latch.countDown();
                 liveData.removeObserver(this);
             }

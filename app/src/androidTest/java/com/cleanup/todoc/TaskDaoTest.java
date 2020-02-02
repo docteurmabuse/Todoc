@@ -26,7 +26,7 @@ public class TaskDaoTest {
     //FOR DATA
     private TodocDatabase database;
     private static long PROJECT_ID = 1L;
-    private static Task TASK_DEMO = new Task(1, PROJECT_ID, "Clean Kitchen", new Date().getTime());
+    private static Task TASK_DEMO = new Task(PROJECT_ID, "Clean Kitchen", new Date().getTime());
 
     @Before
     public void initDb() throws Exception {
