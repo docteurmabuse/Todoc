@@ -13,17 +13,17 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
-import java.util.List;
-
-import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class ProjectDaoTest {
-    private static long PROJECT_ID = 1L;
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
     ProjectDao projectDao;
     //FOR DATA
     private TodocDatabase database;
+    private static long PROJECT_ID = 1L;
+    private static Project PROJECT_DEMO = new Project(1L, "Project Mad Kitchen", 0xFFEADAD1);
+
 
     @Before
     public void initDb() throws Exception {
@@ -36,10 +36,10 @@ public class ProjectDaoTest {
     }
 
     @Test
-    public void getProjectListWithSuccess() throws InterruptedException {
+    public void insertAndGetProject() throws InterruptedException {
         //TEST
-
-        List<Project> projects = LiveDataTestUtil.getValue(this.database.projectDao().getProjects());
-        assertEquals(3, projects.size());
+        this.database.projectDao().createProject(PROJECT_DEMO);
+        Project project = LiveDataTestUtil.getValue(this.database.projectDao().getProject(PROJECT_ID));
+        assertTrue(project.getName().equals(PROJECT_DEMO.name) && project.getId() == PROJECT_ID);
     }
 }
