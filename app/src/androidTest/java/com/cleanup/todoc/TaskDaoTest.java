@@ -26,7 +26,7 @@ public class TaskDaoTest {
     //FOR DATA
     private TodocDatabase database;
     private static long PROJECT_ID = 1L;
-    private static Task TASK_DEMO = new Task(1, PROJECT_ID, "Clean Kitchen", new Date().getTime());
+    private static Task TASK_DEMO = new Task(PROJECT_ID, "Clean Kitchen", new Date().getTime());
 
     @Before
     public void initDb() throws Exception {
@@ -41,7 +41,7 @@ public class TaskDaoTest {
     @Test
     public void getTasksWithNoTaskInserted() throws InterruptedException {
         //TEST
-        List<Task> tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTask(PROJECT_ID));
+        List<Task> tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
         assertTrue(tasks.isEmpty());
     }
 
@@ -50,7 +50,7 @@ public class TaskDaoTest {
         //BEFORE : Adding a new task
         this.database.taskDao().createTask(TASK_DEMO);
         //TEST
-        Task task = LiveDataTestUtil.getValue(this.database.taskDao().getTask(PROJECT_ID));
+        Task task = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
         assertTrue(task.getName().equals(TASK_DEMO.getName()) && task.getId() == TASK_DEMO.getId());
 
     }
