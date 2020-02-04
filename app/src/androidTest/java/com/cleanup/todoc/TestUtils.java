@@ -105,4 +105,5 @@ public class TestUtils {
             recyclerView.scrollToPosition(this.position);
         }
     }
+
 }

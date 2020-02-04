@@ -1,6 +1,5 @@
 package com.cleanup.todoc.model;
 
-import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.PrimaryKey;
@@ -14,19 +13,18 @@ import java.util.Comparator;
  *
  * @author Gaëtan HERFRAY
  */
-@Entity(foreignKeys = @ForeignKey(entity = Project.class, parentColumns = "project_id", childColumns = "project_id"))
+@Entity(foreignKeys = @ForeignKey(entity = Project.class, parentColumns = "id", childColumns = "projectId"))
 public class Task {
     /**
      * The unique identifier of the task
      */
     @PrimaryKey(autoGenerate = true)
-    public long id;
+    private long id;
 
     /**
      * The unique identifier of the project associated to the task
      */
-    @ColumnInfo(name = "project_id")
-    public long projectId;
+    private long projectId;
 
     /**
      * The name of the task
@@ -39,19 +37,18 @@ public class Task {
     /**
      * The timestamp when the task has been created
      */
-    @ColumnInfo(name = "creation_timestamp")
-    public long creationTimestamp;
+    private long creationTimestamp;
 
     /**
      * Instantiates a new Task.
      *
-     * //@param id                the unique identifier of the task to set
+     * @param id                the unique identifier of the task to set
      * @param projectId         the unique identifier of the project associated to the task to set
      * @param name              the name of the task to set
      * @param creationTimestamp the timestamp when the task has been created to set
      */
-    public Task(long projectId, @NonNull String name, long creationTimestamp) {
-//        this.setId(id);
+    public Task(long id, long projectId, @NonNull String name, long creationTimestamp) {
+        this.setId(id);
         this.setProjectId(projectId);
         this.setName(name);
         this.setCreationTimestamp(creationTimestamp);

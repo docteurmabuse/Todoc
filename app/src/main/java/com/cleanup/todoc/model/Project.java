@@ -1,8 +1,6 @@
 package com.cleanup.todoc.model;
 
-import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
@@ -14,28 +12,25 @@ import android.support.annotation.Nullable;
  * @author Gaëtan HERFRAY
  */
 
-@Entity(indices = {@Index("name"),
-        @Index(value = {"project_id"})})
+@Entity
 public class Project {
     /**
      * The unique identifier of the project
      */
-    @NonNull
-    @ColumnInfo(name = "project_id")
     @PrimaryKey
-    public final long id;
+    private final long id;
 
     /**
      * The name of the project
      */
     @NonNull
-    public final String name;
+    private final String name;
 
     /**
      * The hex (ARGB) code of the color associated to the project
      */
     @ColorInt
-    public final int color;
+    private final int color;
 
     /**
      * Instantiates a new Project.
@@ -44,7 +39,7 @@ public class Project {
      * @param name  the name of the project to set
      * @param color the hex (ARGB) code of the color associated to the project to set
      */
-    public Project(long id, @NonNull String name, @ColorInt int color) {
+    private Project(long id, @NonNull String name, @ColorInt int color) {
         this.id = id;
         this.name = name;
         this.color = color;
