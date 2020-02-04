@@ -38,8 +38,8 @@ public class TaskViewModel extends ViewModel {
     }
 
     //FOR TASK
-    public LiveData<List<Task>> getTasks(long projectId) {
-        return taskDataSource.getTasks(projectId);
+    public LiveData<List<Task>> getTasks() {
+        return taskDataSource.getTasks();
     }
 
     public void createTask(Task task) {

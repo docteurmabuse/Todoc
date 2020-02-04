@@ -20,8 +20,8 @@ public class TaskDataRepository {
     }
 
     //READ
-    public LiveData<List<Task>> getTasks(long projectId) {
-        return taskDao.getTasks(projectId);
+    public LiveData<List<Task>> getTasks() {
+        return taskDao.getTasks();
     }
 
     //UPDATE
