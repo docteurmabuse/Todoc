@@ -116,11 +116,24 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
                 showAddTaskDialog();
             }
         });
+        getProjects();
         getTasks();
     }
 
     private void getTasks() {
+        this.taskViewModel.getTasks().observe(this, this::updateTasksList);
+    }
+
+    private void updateTasksList(List<Task> tasks) {
+        this.adapter.updateData(tasks);
+    }
+
+    private void getProjects() {
         this.taskViewModel.getProjects().observe(this, this::updateProjectsList);
+    }
+
+    private void updateProjectsList(List<Project> projects) {
+        allProjects = projects;
     }
 
     @Override
@@ -151,7 +164,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     @Override
     public void onDeleteTask(Task task) {
         this.taskViewModel.deleteTask(task.getId());
-        //tasks.remove(task);
         updateTasks();
     }
 
@@ -160,10 +172,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         ViewModelFactory mViewModelFactory = Injection.provideViewModelFactory(this);
         this.taskViewModel = ViewModelProviders.of(this, mViewModelFactory).get(TaskViewModel.class);
         this.taskViewModel.init();
-    }
-
-    private void updateProjectsList(List<Project> projects) {
-        allProjects = projects;
     }
 
     /**
