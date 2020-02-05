@@ -27,6 +27,7 @@ import com.cleanup.todoc.model.Task;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>Home activity of the application which is displayed when the user opens the app.</p>
@@ -36,10 +37,14 @@ import java.util.Date;
  */
 public class MainActivity extends AppCompatActivity implements TasksAdapter.DeleteTaskListener {
     /**
+     * FOR DATA
+     */
+    private TaskViewModel taskViewModel;
+    /**
      * List of all projects available in the application
      */
-    private final Project[] allProjects = Project.getAllProjects();
-
+    //private final Project[] allProjects = Project.getAllProjects();
+    private List<Project> allProjects;
     /**
      * List of all current tasks of the application
      */
@@ -91,15 +96,12 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     @NonNull
     private TextView lblNoTasks;
 
-    //FOR DATA
-    private TaskViewModel taskViewModel;
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.configureViewModel();
-
+        this.taskViewModel.getProjects().observe(this, this::updateProjectsList);
         setContentView(R.layout.activity_main);
 
         listTasks = findViewById(R.id.list_tasks);
@@ -114,6 +116,11 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
                 showAddTaskDialog();
             }
         });
+        getTasks();
+    }
+
+    private void getTasks() {
+        this.taskViewModel.getProjects().observe(this, this::updateProjectsList);
     }
 
     @Override
@@ -154,6 +161,11 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         this.taskViewModel = ViewModelProviders.of(this, mViewModelFactory).get(TaskViewModel.class);
         this.taskViewModel.init();
     }
+
+    private void updateProjectsList(List<Project> projects) {
+        allProjects = projects;
+    }
+
     /**
      * Called when the user clicks on the positive button of the Create Task Dialog.
      *
@@ -192,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
                 dialogInterface.dismiss();
             }
             // If name has been set, but project has not been set (this should never occur)
-            else{
+            else {
                 dialogInterface.dismiss();
             }
         }
