@@ -42,7 +42,6 @@ public class Task {
     /**
      * Instantiates a new Task.
      *
-     * @param id                the unique identifier of the task to set
      * @param projectId         the unique identifier of the project associated to the task to set
      * @param name              the name of the task to set
      * @param creationTimestamp the timestamp when the task has been created to set

@@ -13,6 +13,10 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 public class ProjectDaoTest {
@@ -36,9 +40,19 @@ public class ProjectDaoTest {
 
     @Test
     public void insertAndGetProject() throws InterruptedException {
-        //TEST
+        //TEST CREATE Project
         this.database.projectDao().createProject(PROJECT_DEMO);
         Project project = LiveDataTestUtil.getValue(this.database.projectDao().getProject(PROJECT_ID));
         assertTrue(project.getName().equals(PROJECT_DEMO.name) && project.getId() == PROJECT_ID);
+    }
+
+    @Test
+    public void insertAndGetProjects() throws InterruptedException {
+        //TEST CREATE Project & READ project list
+        List<Project> projects = new ArrayList<>();
+        assertEquals(0, projects.size());
+        this.database.projectDao().createProject(PROJECT_DEMO);
+        projects = LiveDataTestUtil.getValue(this.database.projectDao().getProjects());
+        assertEquals(1, projects.size());
     }
 }
