@@ -60,7 +60,7 @@ public class TaskDaoTest {
 
     @Test
     public void insertAndDeleteTask() throws InterruptedException {
-        //BEFORE : Adding a new project & CREATE Task
+        //BEFORE : Adding a new project & Delete Task
         this.database.projectDao().createProject(PROJECT_DEMO);
         this.database.taskDao().insertTask(TASK_DEMO);
         List<Task> tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
