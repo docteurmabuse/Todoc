@@ -16,7 +16,7 @@ public class TaskDataRepository {
 
     //CREATE
     public void createTask(Task task) {
-        taskDao.createTask(task);
+        taskDao.insertTask(task);
     }
 
     //READ

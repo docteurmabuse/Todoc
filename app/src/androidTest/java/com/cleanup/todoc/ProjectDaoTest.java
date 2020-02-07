@@ -52,6 +52,7 @@ public class ProjectDaoTest {
         List<Project> projects = new ArrayList<>();
         assertEquals(0, projects.size());
         this.database.projectDao().createProject(PROJECT_DEMO);
+        this.database.projectDao().createProject(PROJECT_DEMO);
         projects = LiveDataTestUtil.getValue(this.database.projectDao().getProjects());
         assertEquals(1, projects.size());
     }

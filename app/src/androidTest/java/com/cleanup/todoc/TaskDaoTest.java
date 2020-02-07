@@ -6,6 +6,7 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
 import com.cleanup.todoc.database.dao.TodocDatabase;
+import com.cleanup.todoc.model.Project;
 import com.cleanup.todoc.model.Task;
 
 import org.junit.After;
@@ -17,6 +18,7 @@ import org.junit.runner.RunWith;
 import java.util.Date;
 import java.util.List;
 
+import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
@@ -26,6 +28,7 @@ public class TaskDaoTest {
     //FOR DATA
     private TodocDatabase database;
     private static long PROJECT_ID = 1L;
+    private static Project PROJECT_DEMO = new Project(1L, "Project Mad Kitchen", 0xFFEADAD1);
     private static Task TASK_DEMO = new Task(PROJECT_ID, "Clean Kitchen", new Date().getTime());
 
     @Before
@@ -46,12 +49,25 @@ public class TaskDaoTest {
     }
 
     @Test
-    public void insertAndGetTask() throws InterruptedException {
-        //BEFORE : Adding a new task
-        this.database.taskDao().createTask(TASK_DEMO);
-        //TEST
-        Task task = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
-        assertTrue(task.getName().equals(TASK_DEMO.getName()) && task.getId() == TASK_DEMO.getId());
+    public void insertAndGetTasks() throws InterruptedException {
+        //BEFORE : Adding a new project & CREATE Task
+        this.database.projectDao().createProject(PROJECT_DEMO);
+        this.database.taskDao().insertTask(TASK_DEMO);
+        //TEST tasks list should be equal to 1
+        List<Task> tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
+        assertEquals(1, tasks.size());
+    }
 
+    @Test
+    public void insertAndDeleteTask() throws InterruptedException {
+        //BEFORE : Adding a new project & CREATE Task
+        this.database.projectDao().createProject(PROJECT_DEMO);
+        this.database.taskDao().insertTask(TASK_DEMO);
+        List<Task> tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
+        Task taskAdded = tasks.get(0);
+        this.database.taskDao().deleteTask(taskAdded.getId());
+        //TEST tasks list should be empty
+        tasks = LiveDataTestUtil.getValue(this.database.taskDao().getTasks());
+        assertTrue(tasks.isEmpty());
     }
 }
