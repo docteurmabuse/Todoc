@@ -36,7 +36,7 @@ public class MainActivityInstrumentedTest {
     public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void addAndRemoveTask() {
+    public void checkIfAddTaskIsWorking() {
         MainActivity activity = rule.getActivity();
         TextView lblNoTask = activity.findViewById(R.id.lbl_no_task);
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
@@ -57,8 +57,25 @@ public class MainActivityInstrumentedTest {
         assertThat(lblNoTask.getVisibility(), equalTo(View.VISIBLE));
         // Check that recyclerView is not displayed anymore
         assertThat(listTasks.getVisibility(), equalTo(View.GONE));
-        assertThat(listTasks.getAdapter().getItemCount(), equalTo(tasksCount));
+    }
 
+    @Test
+    public void checkIfDeleteTaskIsWorking() {
+        MainActivity activity = rule.getActivity();
+        TextView lblNoTask = activity.findViewById(R.id.lbl_no_task);
+        RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        onView(withId(R.id.fab_add_task)).perform(click());
+        onView(withId(R.id.txt_task_name)).perform(replaceText("Tâche example"));
+        onView(withId(android.R.id.button1)).perform(click());
+
+        int tasksCount = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+
+        onView(withRecyclerView(R.id.list_tasks).atPositionOnView(tasksCount, R.id.img_delete)).perform(click());
+        // Check that lblTask is displayed
+        assertThat(lblNoTask.getVisibility(), equalTo(View.VISIBLE));
+        // Check that recyclerView is not displayed anymore
+        assertThat(listTasks.getVisibility(), equalTo(View.GONE));
+        assertThat(listTasks.getAdapter().getItemCount(), equalTo(tasksCount));
     }
 
     @Test
