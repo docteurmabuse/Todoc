@@ -37,7 +37,6 @@ public class ProjectDaoTest {
         database.close();
     }
 
-
     @Test
     public void insertAndGetProjects() throws InterruptedException {
         //TEST CREATE Project & READ project list

@@ -100,11 +100,13 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
         listTasks = findViewById(R.id.list_tasks);
         lblNoTasks = findViewById(R.id.lbl_no_task);
         this.configureRecyclerview();
         this.configureViewModel();
+        this.configureRecyclerview();
+        this.getProjects();
+        this.getTasks();
 
         findViewById(R.id.fab_add_task).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,11 +114,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
                 showAddTaskDialog();
             }
         });
-        this.configureRecyclerview();
-
-        this.getProjects();
-        this.getTasks();
-
     }
 
     private void configureRecyclerview() {

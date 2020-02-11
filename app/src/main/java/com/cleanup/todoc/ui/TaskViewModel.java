@@ -13,7 +13,7 @@ import java.util.concurrent.Executor;
 
 public class TaskViewModel extends ViewModel {
 
-    //REPOSOTORIES
+    //REPOSITORIES
     private final ProjectDataRepository projectDataSource;
     private final TaskDataRepository taskDataSource;
     private final Executor executor;

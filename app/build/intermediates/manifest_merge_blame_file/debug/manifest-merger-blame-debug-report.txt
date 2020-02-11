@@ -25,36 +25,37 @@
 17-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:10:9-54
 18        android:supportsRtl="true"
 18-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:11:9-35
-19        android:theme="@style/AppTheme" >
-19-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:12:9-40
-20        <activity
-20-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:14:9-21:20
-21            android:name="com.cleanup.todoc.ui.MainActivity"
-21-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:15:13-44
-22            android:label="@string/app_name" >
-22-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:16:13-45
-23            <intent-filter>
-23-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:17:13-20:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:17-69
-24-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:17-77
-26-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:27-74
-27            </intent-filter>
-28        </activity>
-29
-30        <provider
-30-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-31            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-31-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:24:13-83
-32            android:authorities="com.cleanup.todoc.lifecycle-trojan"
-32-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:25:13-68
-33            android:exported="false"
-33-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:26:13-37
-34            android:multiprocess="true" />
-34-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:27:13-40
-35    </application>
-36
-37</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:12:9-40
+21        <activity
+21-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:14:9-21:20
+22            android:name="com.cleanup.todoc.ui.MainActivity"
+22-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:15:13-44
+23            android:label="@string/app_name" >
+23-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:16:13-45
+24            <intent-filter>
+24-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:17:13-20:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:17-69
+25-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:17-77
+27-->C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:27-74
+28            </intent-filter>
+29        </activity>
+30
+31        <provider
+31-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+32            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+32-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:24:13-83
+33            android:authorities="com.cleanup.todoc.lifecycle-trojan"
+33-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:25:13-68
+34            android:exported="false"
+34-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:26:13-37
+35            android:multiprocess="true" />
+35-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\38be26bf69b6200e727142bd93d4f379\extensions-1.1.1\AndroidManifest.xml:27:13-40
+36    </application>
+37
+38</manifest>
