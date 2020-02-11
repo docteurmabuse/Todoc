@@ -165,7 +165,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         this.taskViewModel.deleteTask(task.getId());
         //updateTasks();
         this.getTasks();
-
     }
 
     // Configuring ViewModel

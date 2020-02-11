@@ -57,6 +57,8 @@ public class MainActivityInstrumentedTest {
         assertThat(lblNoTask.getVisibility(), equalTo(View.VISIBLE));
         // Check that recyclerView is not displayed anymore
         assertThat(listTasks.getVisibility(), equalTo(View.GONE));
+        assertThat(listTasks.getAdapter().getItemCount(), equalTo(tasksCount));
+
     }
 
     @Test

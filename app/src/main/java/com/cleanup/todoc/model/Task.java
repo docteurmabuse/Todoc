@@ -47,7 +47,6 @@ public class Task {
      * @param creationTimestamp the timestamp when the task has been created to set
      */
     public Task(long projectId, @NonNull String name, long creationTimestamp) {
-        //this.setId(id);
         this.setProjectId(projectId);
         this.setName(name);
         this.setCreationTimestamp(creationTimestamp);
