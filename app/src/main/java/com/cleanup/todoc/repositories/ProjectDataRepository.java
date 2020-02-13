@@ -23,4 +23,9 @@ public class ProjectDataRepository {
     public LiveData<List<Project>> getProjects() {
         return this.projectDao.getProjects();
     }
+
+    //CREATE PROJECT
+    public void createProject(Project project) {
+        projectDao.createProject(project);
+    }
 }
