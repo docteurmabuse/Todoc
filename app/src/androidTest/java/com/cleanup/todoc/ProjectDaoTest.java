@@ -7,6 +7,7 @@ import android.support.test.InstrumentationRegistry;
 import com.cleanup.todoc.database.TodocDatabase;
 import com.cleanup.todoc.database.dao.ProjectDao;
 import com.cleanup.todoc.model.Project;
+import com.cleanup.todoc.utils.LiveDataTestUtil;
 
 import org.junit.After;
 import org.junit.Before;
