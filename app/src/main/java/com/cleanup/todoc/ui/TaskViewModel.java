@@ -27,10 +27,6 @@ public class TaskViewModel extends ViewModel {
         this.executor = executor;
     }
 
-    public void init() {
-        if (this.currentProject != null) return;
-        //currentProject = projectDataSource.getProject(projectId);
-    }
 
     //FOR PROJECT
     public LiveData<Project> getProject(long projectId) {
@@ -41,6 +37,11 @@ public class TaskViewModel extends ViewModel {
     public LiveData<List<Project>> getProjects() {
         return projectDataSource.getProjects();
     }
+
+    public void createProject(Project project) {
+        executor.execute(() -> projectDataSource.createProject(project));
+    }
+
 
     //FOR TASK
     public LiveData<List<Task>> getTasks() {
