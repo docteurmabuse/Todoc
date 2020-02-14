@@ -171,7 +171,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     private void configureViewModel() {
         ViewModelFactory mViewModelFactory = Injection.provideViewModelFactory(this);
         this.taskViewModel = ViewModelProviders.of(this, mViewModelFactory).get(TaskViewModel.class);
-        this.taskViewModel.init();
     }
 
     /**

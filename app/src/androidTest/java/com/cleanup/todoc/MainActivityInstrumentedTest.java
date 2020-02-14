@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.cleanup.todoc.ui.MainActivity;
+import com.cleanup.todoc.ui.TasksAdapter;
 import com.cleanup.todoc.utils.DeleteViewAction;
 
 import org.junit.Rule;
@@ -34,6 +35,7 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(AndroidJUnit4.class)
 public class MainActivityInstrumentedTest {
+    private TasksAdapter database;
     @Rule
     public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
 
