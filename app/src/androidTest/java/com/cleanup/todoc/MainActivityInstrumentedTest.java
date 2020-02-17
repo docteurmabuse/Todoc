@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.cleanup.todoc.ui.MainActivity;
-import com.cleanup.todoc.ui.TasksAdapter;
 import com.cleanup.todoc.utils.DeleteViewAction;
 
 import org.junit.Rule;
@@ -35,7 +34,6 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(AndroidJUnit4.class)
 public class MainActivityInstrumentedTest {
-    private TasksAdapter database;
     @Rule
     public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
 
@@ -44,7 +42,14 @@ public class MainActivityInstrumentedTest {
         MainActivity activity = rule.getActivity();
         TextView lblNoTask = activity.findViewById(R.id.lbl_no_task);
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
-        int tasksCount = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
@@ -54,7 +59,7 @@ public class MainActivityInstrumentedTest {
         // Check that recyclerView is displayed
         assertThat(listTasks.getVisibility(), equalTo(View.VISIBLE));
         // Check that it contains one more element
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 1, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
     }
 
     @Test
@@ -62,12 +67,20 @@ public class MainActivityInstrumentedTest {
         MainActivity activity = rule.getActivity();
         TextView lblNoTask = activity.findViewById(R.id.lbl_no_task);
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
 
         int tasksCount = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 1, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
         assertThat(listTasks.getAdapter().getItemCount(), equalTo(tasksCount));
 
         if (tasksCount == 0) {
@@ -83,6 +96,14 @@ public class MainActivityInstrumentedTest {
     public void sortTasksAlphabeticalAZ() {
         MainActivity activity = rule.getActivity();
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("aaa Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
@@ -112,15 +133,23 @@ public class MainActivityInstrumentedTest {
                 .check(matches(withText("zzz Tâche example")));
 
         //Delete tested items
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
     }
 
     @Test
     public void sortTasksAlphabeticalZA() {
         MainActivity activity = rule.getActivity();
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("aaa Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
@@ -150,15 +179,23 @@ public class MainActivityInstrumentedTest {
                 .check(matches(withText("aaa Tâche example")));
 
         //Delete tested items
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
     }
 
     @Test
     public void sortTasksRecentFirst() {
         MainActivity activity = rule.getActivity();
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("aaa Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
@@ -196,6 +233,14 @@ public class MainActivityInstrumentedTest {
     public void sortTasksOldFirst() {
         MainActivity activity = rule.getActivity();
         RecyclerView listTasks = activity.findViewById(R.id.list_tasks);
+        //Delete previous tasks
+        int count = Objects.requireNonNull(listTasks.getAdapter()).getItemCount();
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+
+            }
+        }
         onView(withId(R.id.fab_add_task)).perform(click());
         onView(withId(R.id.txt_task_name)).perform(replaceText("aaa Tâche example"));
         onView(withId(android.R.id.button1)).perform(click());
@@ -225,8 +270,8 @@ public class MainActivityInstrumentedTest {
                 .check(matches(withText("hhh Tâche example")));
 
         //Delete tested items
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
-        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(tasksCount - 3, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
+        onView(withId(R.id.list_tasks)).perform(RecyclerViewActions.actionOnItemAtPosition(0, new DeleteViewAction()));
     }
 }
