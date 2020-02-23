@@ -578,7 +578,7 @@ jQuery.cookie = function(name, value, options) {
 <body>
 <div id="container">
     <div id="header">
-        <div class="time" xmlns="">36.43 s</div>
+        <div class="time" xmlns="">13.68 s</div>
         <h1>MainActivityInstrume...: <strong><span class="total"
                                                    xmlns="http://www.w3.org/1999/xhtml">5 total, </span><span
                 class="passed">5 passed</span></strong>
@@ -599,100 +599,76 @@ jQuery.cookie = function(name, value, options) {
         <ul id="tree">
             <li class="level top open" xmlns="">
 <span><em class="time">
-<div class="time">36.43 s</div>
+<div class="time">13.68 s</div>
 </em>com.cleanup.todoc.MainActivityInstrumentedTest</span>
                 <ul>
                     <li class="level test">
 <span><em class="time">
-<div class="time">4.46 s</div>
+<div class="time">1.95 s</div>
 </em><em class="status">passed</em>checkIfDeleteTaskIsWorking</span>
                         <ul>
                             <li class="text">
-                                <span class="stdout">Capturing and displaying logcat messages from application. This behavior can be disabled in the &quot;Logcat output&quot; section of the &quot;Debugger&quot; settings page.<br/></span>
+                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@45d17ad<br/>W/System.err: java.io.FileNotFoundException: /jacoco.exec (Read-only file system)<br/>        at java.io.FileOutputStream.open0(Native Method)<br/>        at java.io.FileOutputStream.open(FileOutputStream.java:308)<br/>        at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:238)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.openFile(FileOutput.java:67)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.startup(FileOutput.java:49)<br/>W/System.err:     at org.jacoco.agent.rt.internal_8ff85ea.Agent.startup(Agent.java:122)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Agent.getInstance(Agent.java:50)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Offline.&lt;clinit&gt;(Offline.java:31)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Offline.getProbes(Offline.java:51)<br/>        at com.cleanup.todoc.ui.MainActivity.$jacocoInit(Unknown Source:13)<br/>        at com.cleanup.todoc.ui.MainActivity.&lt;init&gt;(Unknown Source:0)<br/>W/System.err:     at java.lang.Class.newInstance(Native Method)<br/>W/System.err:     at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)<br/>        at android.support.v4.app.CoreComponentFactory.instantiateActivity(CoreComponentFactory.java:43)<br/>        at android.app.Instrumentation.newActivity(Instrumentation.java:1215)<br/>        at android.support.test.runner.MonitoringInstrumentation.newActivity(MonitoringInstrumentation.java:754)<br/>        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)<br/>        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)<br/>W/System.err:     at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)<br/>        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)<br/>        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)<br/>        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)<br/>        at android.os.Handler.dispatchMessage(Handler.java:106)<br/>        at android.os.Looper.loop(Looper.java:193)<br/>        at android.app.ActivityThread.main(ActivityThread.java:6669)<br/>        at java.lang.reflect.Method.invoke(Native Method)<br/>        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)<br/>        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/m.cleanup.todo: Not late-enabling -Xcheck:jni (already on)<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@36081a9 in: PRE_ON_CREATE<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: Unexpected CPU variant for X86 using defaults: x86<br/></span>
+                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/view/View;-&gt;computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)<br/>    Accessing hidden method Landroid/view/ViewGroup;-&gt;makeOptionalFitsSystemWindows()V (light greylist, reflection)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/m.cleanup.todo: The ClassLoaderContext is a special shared library.<br/>I/m.cleanup.todo: The ClassLoaderContext is a special shared library.<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@36081a9 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@36081a9 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@36081a9 in: RESUMED<br/>D/OpenGLRenderer: Skia GL Pipeline<br/>D/HostConnection: HostConnection::get() New Host Connection established 0xd3003960, tid 14452<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_1 <br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: ClassLoaderContext classpath size mismatch for position 0. expected=0, found=4 (PCL[] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk*2895578638:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk!classes2.dex*1983292660])<br/></span>
+                                <span class="stdout">I/ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0<br/>    android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0<br/>I/OpenGLRenderer: Initialized EGL, version 1.4<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/m.cleanup.todo: The ClassLoaderContext is a special shared library.<br/>I/m.cleanup.todo: The ClassLoaderContext is a special shared library.<br/></span>
+                                <span class="stdout">D/OpenGLRenderer: Swap behavior 1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: ClassLoaderContext size mismatch. expected=1, actual=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk*2895578638:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk!classes2.dex*1983292660];PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk*2895578638:/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk!classes2.dex*1983292660:/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk*4272752083:/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk!classes2.dex*3544477920])<br/>    Found duplicate classes, falling back to extracting from APK : /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk<br/>    NOTE: This wastes RAM and hurts startup performance.<br/>    Found duplicated class when checking oat files: &#39;Landroid/arch/core/R;&#39; in /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk!classes2.dex and /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk!classes2.dex<br/>W/m.cleanup.todo: Accessing hidden method Landroid/app/Instrumentation;-&gt;execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (light greylist, linking)<br/>    Accessing hidden method Landroid/app/Instrumentation;-&gt;execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (light greylist, linking)<br/></span>
+                                <span class="stdout">W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/MonitoringInstr: Instrumentation started on process com.cleanup.todoc<br/>I/MonitoringInstr: Setting context classloader to &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk&quot;, zip file &quot;/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/lib/x86, /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/lib/x86, /system/lib]]]&#39;, Original: &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk&quot;, zip file &quot;/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/lib/x86, /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/lib/x86, /system/lib]]]&#39;<br/>I/MonitoringInstr: No JSBridge.<br/>I/MonitoringInstr: Setting context classloader to &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk&quot;, zip file &quot;/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/lib/x86, /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/lib/x86, /system/lib]]]&#39;, Original: &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/base.apk&quot;, zip file &quot;/data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.cleanup.todoc.test-UiOnkCeChBZAQixphI4_ow==/lib/x86, /data/app/com.cleanup.todoc-KB_DgMOl9PxLlHEPNUSJmw==/lib/x86, /system/lib]]]&#39;<br/></span>
+                                <span class="stdout">D/OpenGLRenderer: Swap behavior 0<br/>D/eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0<br/>D/EGL_emulation: eglCreateContext: 0xedef89a0: maj 3 min 1 rcv 4<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/InfraTrack: Tracking disabled due to lack of internet permissions<br/></span>
+                                <span class="stdout">E/eglCodecCommon: glUtilsParamSize: unknow param 0x000082da<br/>E/eglCodecCommon: glUtilsParamSize: unknow param 0x000082da<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/UsageTrackerFacilitator: Usage tracking disabled<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/TestExecutor: Adding listener android.support.test.internal.runner.listener.LogRunListener<br/>D/TestExecutor: Adding listener android.support.test.internal.runner.listener.InstrumentationResultPrinter<br/>    Adding listener android.support.test.internal.runner.listener.ActivityFinisherRunListener<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/TestRunner: run started: 5 tests<br/>I/TestRunner: started: checkIfDeleteTaskIsWorking(com.cleanup.todoc.MainActivityInstrumentedTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@a9477f1<br/>W/System.err: java.io.FileNotFoundException: /jacoco.exec (Read-only file system)<br/>W/System.err:     at java.io.FileOutputStream.open0(Native Method)<br/>        at java.io.FileOutputStream.open(FileOutputStream.java:308)<br/>        at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:238)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.openFile(FileOutput.java:67)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.startup(FileOutput.java:49)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Agent.startup(Agent.java:122)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Agent.getInstance(Agent.java:50)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Offline.&lt;clinit&gt;(Offline.java:31)<br/>        at org.jacoco.agent.rt.internal_8ff85ea.Offline.getProbes(Offline.java:51)<br/>W/System.err:     at com.cleanup.todoc.ui.MainActivity.$jacocoInit(Unknown Source:13)<br/>        at com.cleanup.todoc.ui.MainActivity.&lt;init&gt;(Unknown Source:0)<br/>        at java.lang.Class.newInstance(Native Method)<br/>        at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)<br/>        at android.support.v4.app.CoreComponentFactory.instantiateActivity(CoreComponentFactory.java:43)<br/>        at android.app.Instrumentation.newActivity(Instrumentation.java:1215)<br/>        at android.support.test.runner.MonitoringInstrumentation.newActivity(MonitoringInstrumentation.java:754)<br/>        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)<br/>        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)<br/>        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)<br/>        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)<br/>        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)<br/>        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)<br/>        at android.os.Handler.dispatchMessage(Handler.java:106)<br/>        at android.os.Looper.loop(Looper.java:193)<br/>W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:6669)<br/>        at java.lang.reflect.Method.invoke(Native Method)<br/>        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)<br/>        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: PRE_ON_CREATE<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/view/View;-&gt;computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/view/ViewGroup;-&gt;makeOptionalFitsSystemWindows()V (light greylist, reflection)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: RESUMED<br/>D/OpenGLRenderer: Skia GL Pipeline<br/>D/HostConnection: HostConnection::get() New Host Connection established 0xd6875eb0, tid 10629<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_0 <br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0<br/>I/m.cleanup.todo: Background concurrent copying GC freed 27280(6MB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 1599KB/3MB, paused 862us total 243.867ms<br/>I/ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0<br/>I/OpenGLRenderer: Initialized EGL, version 1.4<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/OpenGLRenderer: Swap behavior 1<br/>D/eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0<br/>D/EGL_emulation: eglCreateContext: 0xd67d16c0: maj 3 min 0 rcv 3<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/HostConnection: createUnique: call<br/>D/HostConnection: HostConnection::get() New Host Connection established 0xd6876270, tid 10629<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_0 <br/></span>
+                                <span class="stdout">D/HostConnection: createUnique: call<br/>    HostConnection::get() New Host Connection established 0xd3004040, tid 14452<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_1 <br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">E/eglCodecCommon: GoldfishAddressSpaceHostMemoryAllocator: ioctl_ping failed for device_type=5, ret=-1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 3 2<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 3 2<br/>D/InputManagerEventInjectionStrategy: Creating injection strategy with input manager.<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/OpenGLRenderer: Davey! duration=1472ms; Flags=0, IntendedVsync=4381390961865, Vsync=4381690961853, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=4381700615700, AnimationStart=4381700707100, PerformTraversalsStart=4381701356100, DrawStart=4381899431700, SyncQueued=4381912657200, SyncStart=4381913190800, IssueDrawCommandsStart=4381913267500, SwapBuffers=4382706399400, FrameCompleted=4382863648200, DequeueBufferDuration=342000, QueueBufferDuration=878000, <br/>I/Choreographer: Skipped 59 frames!  The application may be doing too much work on its main thread.<br/>I/OpenGLRenderer: Davey! duration=1035ms; Flags=0, IntendedVsync=4381912528563, Vsync=4382895861857, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=4382909719600, AnimationStart=4382910200900, PerformTraversalsStart=4382910231200, DrawStart=4382914986800, SyncQueued=4382916119700, SyncStart=4382916559000, IssueDrawCommandsStart=4382916813700, SwapBuffers=4382920165000, FrameCompleted=4382948896900, DequeueBufferDuration=665000, QueueBufferDuration=1867000, <br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/InputManagerEventInjectionStrategy: Creating injection strategy with input manager.<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/hardware/input/InputManager;-&gt;getInstance()Landroid/hardware/input/InputManager; (light greylist, reflection)<br/>    Accessing hidden method Landroid/hardware/input/InputManager;-&gt;injectInputEvent(Landroid/view/InputEvent;I)Z (light greylist, reflection)<br/>    Accessing hidden field Landroid/hardware/input/InputManager;-&gt;INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/view/ViewConfiguration;-&gt;getDoubleTapMinTime()I (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/os/MessageQueue;-&gt;next()Landroid/os/Message; (light greylist, reflection)<br/>    Accessing hidden field Landroid/os/MessageQueue;-&gt;mMessages:Landroid/os/Message; (light greylist, reflection)<br/>    Accessing hidden method Landroid/os/Message;-&gt;recycleUnchecked()V (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/view/WindowManagerGlobal;-&gt;getInstance()Landroid/view/WindowManagerGlobal; (light greylist, reflection)<br/>    Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mViews:Ljava/util/ArrayList; (light greylist, reflection)<br/>    Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mParams:Ljava/util/ArrayList; (light greylist, reflection)<br/></span>
+                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/hardware/input/InputManager;-&gt;getInstance()Landroid/hardware/input/InputManager; (light greylist, reflection)<br/>    Accessing hidden method Landroid/hardware/input/InputManager;-&gt;injectInputEvent(Landroid/view/InputEvent;I)Z (light greylist, reflection)<br/>    Accessing hidden field Landroid/hardware/input/InputManager;-&gt;INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/view/ViewConfiguration;-&gt;getDoubleTapMinTime()I (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/os/MessageQueue;-&gt;next()Landroid/os/Message; (light greylist, reflection)<br/>    Accessing hidden field Landroid/os/MessageQueue;-&gt;mMessages:Landroid/os/Message; (light greylist, reflection)<br/>    Accessing hidden method Landroid/os/Message;-&gt;recycleUnchecked()V (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/view/WindowManagerGlobal;-&gt;getInstance()Landroid/view/WindowManagerGlobal; (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mViews:Ljava/util/ArrayList; (light greylist, reflection)<br/>    Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mParams:Ljava/util/ArrayList; (light greylist, reflection)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd152b380 (RippleDrawable) with handle 0xe7c6fae0<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
@@ -701,389 +677,452 @@ jQuery.cookie = function(name, value, options) {
                                 <span class="stdout">W/m.cleanup.todo: Accessing hidden field Landroid/app/Activity;-&gt;mResultCode:I (light greylist, reflection)<br/>    Accessing hidden field Landroid/app/Activity;-&gt;mResultData:Landroid/content/Intent; (light greylist, reflection)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: PAUSED<br/>D/LifecycleMonitor: running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@690ec05<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@690ec05<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@36081a9 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@a3a080b<br/>D/LifecycleMonitor: callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@a3a080b<br/></span>
                             </li>
                         </ul>
                     </li>
                     <li class="level test">
 <span><em class="time">
-<div class="time">7.30 s</div>
+<div class="time">3.64 s</div>
 </em><em class="status">passed</em>sortTasksAlphabeticalAZ</span>
                         <ul>
                             <li class="text">
-                                <span class="stdout">I/MonitoringInstr: Unstopped activity count: 1<br/></span>
+                                <span class="stdout">W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f10cf39<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: STOPPED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/TestRunner: started: sortTasksAlphabeticalAZ(com.cleanup.todoc.MainActivityInstrumentedTest)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@f67a22d in: DESTROYED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@a6cf4b2<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@2638780 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@2638780 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@2638780 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@2638780 in: RESUMED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/m.cleanup.todo: Background concurrent copying GC freed 11320(903KB) AllocSpace objects, 5(92KB) LOS objects, 49% free, 2MB/4MB, paused 71.219ms total 276.374ms<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@27b5edf in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@27b5edf in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@27b5edf in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@27b5edf in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd15d2000 (RippleDrawable) with handle 0xedf7ed30<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd2bce580 (RippleDrawable) with handle 0xe63240e0<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd2c87d00 (RippleDrawable) with handle 0xd317d6e0<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/action_filter<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/widget/PopupWindow;-&gt;setClipToScreenEnabled(Z)V (light greylist, reflection)<br/>    Accessing hidden method Landroid/widget/PopupWindow;-&gt;setEpicenterBounds(Landroid/graphics/Rect;)V (light greylist, reflection)<br/>    Accessing hidden method Landroid/widget/PopupWindow;-&gt;setTouchModal(Z)V (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden field Landroid/widget/AbsListView;-&gt;mIsChildViewEnabled:Z (light greylist, reflection)<br/></span>
+                                <span class="stdout">W/m.cleanup.todo: Accessing hidden method Landroid/widget/PopupWindow;-&gt;setClipToScreenEnabled(Z)V (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden method Landroid/widget/PopupWindow;-&gt;setEpicenterBounds(Landroid/graphics/Rect;)V (light greylist, reflection)<br/>    Accessing hidden method Landroid/widget/PopupWindow;-&gt;setTouchModal(Z)V (light greylist, reflection)<br/>W/m.cleanup.todo: Accessing hidden field Landroid/widget/AbsListView;-&gt;mIsChildViewEnabled:Z (light greylist, reflection)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 13 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with string from resource id: &lt;2131623995&gt;[sort_alphabetical] value: A -&gt; Z<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/TestRunner: finished: sortTasksAlphabeticalAZ(com.cleanup.todoc.MainActivityInstrumentedTest)<br/></span>
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 6 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@27b5edf in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@c3c9108<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@c3c9108<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/TestRunner: finished: sortTasksAlphabeticalAZ(com.cleanup.todoc.MainActivityInstrumentedTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 1<br/></span>
                             </li>
                         </ul>
                     </li>
                     <li class="level test">
 <span><em class="time">
-<div class="time">7.75 s</div>
+<div class="time">3.57 s</div>
 </em><em class="status">passed</em>sortTasksAlphabeticalZA</span>
                         <ul>
                             <li class="text">
-                                <span class="stdout">I/TestRunner: started: sortTasksAlphabeticalZA(com.cleanup.todoc.MainActivityInstrumentedTest)<br/></span>
+                                <span class="stdout">W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@918ccaa<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@2638780 in: DESTROYED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@48608ef<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@5738685 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@5738685 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@5738685 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@5738685 in: RESUMED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/OpenGLRenderer: Davey! duration=761ms; Flags=0, IntendedVsync=4394749130881, Vsync=4395432464187, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=4395439602800, AnimationStart=4395439808900, PerformTraversalsStart=4395442656000, DrawStart=4395451106000, SyncQueued=4395471833100, SyncStart=4395473783800, IssueDrawCommandsStart=4395473967100, SwapBuffers=4395479690000, FrameCompleted=4395512681200, DequeueBufferDuration=103000, QueueBufferDuration=583000, <br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@1ba4c38 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@1ba4c38 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@1ba4c38 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@1ba4c38 in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xe629e280 (RippleDrawable) with handle 0xedeb1c20<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd2bcd080 (RippleDrawable) with handle 0xe7c6b970<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xcfa22480 (RippleDrawable) with handle 0xceef8390<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/action_filter<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/chatty: uid=10090(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 22 lines<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with string from resource id: &lt;2131623996&gt;[sort_alphabetical_invert] value: Z -&gt; A<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/chatty: uid=10090(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/chatty: uid=10090(com.cleanup.todoc) identical 1 line<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@5738685 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@85a2c84<br/>D/LifecycleMonitor: callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@85a2c84<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@1ba4c38 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@e0e261a<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@e0e261a<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                         </ul>
                     </li>
                     <li class="level test">
 <span><em class="time">
-<div class="time">7.20 s</div>
+<div class="time">3.33 s</div>
 </em><em class="status">passed</em>sortTasksRecentFirst</span>
                         <ul>
                             <li class="text">
                                 <span class="stdout">I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9940a08<br/></span>
+                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@47e8804<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: RESUMED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/>I/m.cleanup.todo: Background concurrent copying GC freed 46690(2MB) AllocSpace objects, 22(464KB) LOS objects, 50% free, 3MB/6MB, paused 2.635ms total 136.792ms<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@41c4822 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@41c4822 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@41c4822 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@41c4822 in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd038c900 (RippleDrawable) with handle 0xcf1cdb90<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xd0359e80 (RippleDrawable) with handle 0xcf1cde20<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 2 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xe629cd80 (RippleDrawable) with handle 0xe7c1f620<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/action_filter<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 13 lines<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with string from resource id: &lt;2131623998&gt;[sort_recent_first] value: Les plus récents d’abord<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/chatty: uid=10090(com.cleanup.todoc) RenderThread identical 1 line<br/></span>
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 4 lines<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/chatty: uid=10090(com.cleanup.todoc) identical 1 line<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                                <span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;hhh Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;zzz Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;aaa Tâche example&quot;}&#39; assertion on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@617ec0c<br/>D/LifecycleMonitor: callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@617ec0c<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">I/TestRunner: finished: sortTasksRecentFirst(com.cleanup.todoc.MainActivityInstrumentedTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 1<br/>I/MonitoringInstr: Unstopped activity count: 1<br/></span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level test">
-<span><em class="time">
-<div class="time">9.73 s</div>
-</em><em class="status">passed</em>checkIfAddTaskIsWorking</span>
-                        <ul>
-                            <li class="text">
-                                <span class="stdout">E/THREAD_STATE:   Thread[Binder:10581_3,5,main]<br/>    <br/>      Thread[Espresso Key Event #0,5,main]<br/>        java.lang.Object.wait(Native Method)<br/>        java.lang.Thread.parkFor$(Thread.java:2137)<br/>        sun.misc.Unsafe.park(Unsafe.java:358)<br/>        java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)<br/>        java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2059)<br/>        java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br/>        java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1092)<br/>        java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)<br/>        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)<br/>        java.lang.Thread.run(Thread.java:764)<br/>    <br/>      Thread[Instr: android.support.test.runner.AndroidJUnitRunner,5,main]<br/>        dalvik.system.VMStack.getThreadStackTrace(Native Method)<br/>        java.lang.Thread.getStackTrace(Thread.java:1538)<br/>        java.lang.Thread.getAllStackTraces(Thread.java:1588)<br/>        android.support.test.runner.MonitoringInstrumentation.getThreadState(MonitoringInstrumentation.java:636)<br/>        android.support.test.runner.MonitoringInstrumentation.dumpThreadStateToOutputs(MonitoringInstrumentation.java:631)<br/>        android.support.test.runner.MonitoringInstrumentation.waitForActivitiesToComplete(MonitoringInstrumentation.java:384)<br/>        android.support.test.runner.AndroidJUnitRunner$1.run(AndroidJUnitRunner.java:439)<br/>        android.support.test.internal.runner.listener.ActivityFinisherRunListener.testFinished(ActivityFinisherRunListener.java:55)<br/>        org.junit.runner.notification.SynchronizedRunListener.testFinished(SynchronizedRunListener.java:56)<br/>        org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:190)<br/>        org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)<br/>        org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:187)<br/>        org.junit.internal.runners.model.EachTestNotifier.fireTestFinished(EachTestNotifier.java:38)<br/>        org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:331)<br/>        org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)<br/>        org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)<br/>        org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)<br/>        org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)<br/>        org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)<br/>        org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)<br/>        org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)<br/>        org.junit.runners.ParentRunner.run(ParentRunner.java:363)<br/>        android.support.test.runner.AndroidJUnit4.run(AndroidJUnit4.java:101)<br/>        org.junit.runners.Suite.runChild(Suite.java:128)<br/>        org.junit.runners.Suite.runChild(Suite.java:27)<br/>        org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)<br/>        org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)<br/>        org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)<br/>        org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)<br/>        org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)<br/>        org.junit.runners.ParentRunner.run(ParentRunner.java:363)<br/>        org.junit.runner.JUnitCore.run(JUnitCore.java:137)<br/>        org.junit.runner.JUnitCore.run(JUnitCore.java:115)<br/>        android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)<br/>        android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:384)<br/>        android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2145)<br/>    <br/>      Thread[Binder:10581_1,5,main]<br/>    <br/>      Thread[Signal Catcher,5,system]<br/>    <br/>      Thread[main,5,main]<br/>        sun.util.locale.ParseStatus.reset(ParseStatus.java:46)<br/>        sun.util.locale.ParseStatus.&lt;init&gt;(ParseStatus.java:40)<br/>        sun.util.locale.LanguageTag.parse(LanguageTag.java:183)<br/>        java.util.Locale.forLanguageTag(Locale.java:1648)<br/>        android.os.LocaleList.forLanguageTags(LocaleList.java:293)<br/>        android.os.LocaleList$1.createFromParcel(LocaleList<br/></span>
+                                <span class="stdout">I/chatty: uid=10093(com.cleanup.todoc) RenderThread identical 6 lines<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">W/MonitoringInstr: Still 1 activities active after waiting 2000 ms.<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/TestRunner: started: checkIfAddTaskIsWorking(com.cleanup.todoc.MainActivityInstrumentedTest)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: STOPPED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@8ad03c6 in: DESTROYED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@539996<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d765104 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d765104 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d765104 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d765104 in: RESUMED<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">W/m.cleanup.todo: JNI critical lock held for 65.178ms on Thread[18,tid=10628,Runnable,Thread*=0xe8631800,peer=0x182c7830,&quot;pool-3-thread-2&quot;]<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/>I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">E/MotionEvents: Overslept and turned a tap into a long press<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
-                            </li>
-                            <li class="text">
-                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/>D/EGL_emulation: eglMakeCurrent: 0xd67d16c0: ver 3 0 (tinfo 0xed3725e0)<br/></span>
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
                             </li>
                             <li class="text">
-                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d765104 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@7ffa375<br/>D/LifecycleMonitor: callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@7ffa375<br/></span>
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@41c4822 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@a5e8792<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@a5e8792<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level test">
+<span><em class="time">
+<div class="time">1.19 s</div>
+</em><em class="status">passed</em>checkIfAddTaskIsWorking</span>
+                        <ul>
+                            <li class="text">
+                                <span class="stdout">W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@ada938d<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d7f6d53 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d7f6d53 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d7f6d53 in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d7f6d53 in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.cleanup.todoc:id/fab_add_task<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;replace text&#39; action on view with id: com.cleanup.todoc:id/txt_task_name<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: android:id/button1<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/>D/OpenGLRenderer: endAllActiveAnimators on 0xcf985300 (RippleDrawable) with handle 0xe7c7d8f0<br/>D/EGL_emulation: eglMakeCurrent: 0xedef89a0: ver 3 1 (tinfo 0xe7c6b2d0)<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 0&#39; action on view with id: com.cleanup.todoc:id/list_tasks<br/></span>
+                            </li>
+                            <li class="text">
+                                <span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.cleanup.todoc.ui.MainActivity@d7f6d53 in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@53673d2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@53673d2<br/></span>
                             </li>
                             <li class="text">
                                 <span class="stdout">I/TestRunner: finished: checkIfAddTaskIsWorking(com.cleanup.todoc.MainActivityInstrumentedTest)<br/></span>
@@ -1096,7 +1135,7 @@ jQuery.cookie = function(name, value, options) {
     </div>
 </div>
 <div id="footer">
-    <p>Generated by Android Studio on 17/02/20 14:54</p>
+    <p>Generated by Android Studio on 18/02/20 19:48</p>
 </div>
 </body>
 </html>

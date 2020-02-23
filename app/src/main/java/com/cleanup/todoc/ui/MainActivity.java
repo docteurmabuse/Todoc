@@ -107,7 +107,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         this.configureRecyclerview();
         this.getProjects();
         this.getTasks();
-
         findViewById(R.id.fab_add_task).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -164,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     public void onDeleteTask(Task task) {
         this.taskViewModel.deleteTask(task.getId());
         //updateTasks();
-        this.getTasks();
+        //this.getTasks();
     }
 
     // Configuring ViewModel
@@ -240,7 +239,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         //tasks.add(task);
         this.taskViewModel.createTask(task);
         //updateTasks();
-        this.getTasks();
+        // this.getTasks();
     }
 
     /**
