@@ -1,20 +1,39 @@
 apply plugin: 'com.android.application'
 apply plugin: 'jacoco'
 
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
+    signingConfigs {
+        todoc_release {
+            storeFile file('C:\\Workplace\\Keys\\kstodoc.jks')
+            storePassword 'kz?3+?*w!Ue=V4PD'
+            keyAlias = 'todocKey01'
+            keyPassword '48jG8bs}C_&~vp~K'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.cleanup.todoc"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.01"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.todoc_release
         }
         debug {
             testCoverageEnabled true
