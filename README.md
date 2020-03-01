@@ -24,4 +24,4 @@ Todoc est une application de gestion de tâches.
 ### 7. Si besoin, séléctionner un appareil android et lancer le projet en cliquant sur l'icône flêche verte.
 
 ### 8. Profiter du projet et n'hésiter pas à contribuer ou à faire part d'un bug sur le dépôt Github du projet.
-![device-2020-03-01-180853.png](device-2020-03-01-180853.png)
+![todoc-example](todoc-example.png)
