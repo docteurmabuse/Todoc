@@ -19,6 +19,11 @@ public abstract class TodocDatabase extends RoomDatabase {
     //SINGLETON
     private static volatile TodocDatabase INSTANCE;
 
+    //DAO
+    public abstract TaskDao taskDao();
+
+    public abstract ProjectDao projectDao();
+
     //INSTANCE
     public static TodocDatabase getInstance(Context context) {
         if (INSTANCE == null) {
@@ -51,9 +56,4 @@ public abstract class TodocDatabase extends RoomDatabase {
             }
         };
     }
-
-    //DAO
-    public abstract TaskDao taskDao();
-
-    public abstract ProjectDao projectDao();
 }
