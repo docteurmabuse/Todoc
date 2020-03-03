@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9422adbf4c769861c10f075815a90d9b\design-28.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\5eb6a54fe512aded3428d1597d27058d\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\75bf044b43c44ae2bf6c236e1e497069\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
@@ -38,27 +38,27 @@ MERGED from [com.android.support:documentfile:28.0.0] C:\Users\laure\.gradle\cac
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\1b0fdd178565042dac75fffc2c4fc38a\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9cb8ada685e5cf262381d4bdd40d1d9b\print-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\c461ec8efb0a7b0935b912ac33286b1c\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
 	package
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:3:5-32
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:2:5-51
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:2:5-51
 	android:versionCode
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:1-23:12
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:6:5-22:19
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:6:5-22:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9422adbf4c769861c10f075815a90d9b\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9422adbf4c769861c10f075815a90d9b\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\66afbc1e0a75c843cc9dd1486293d626\extensions-1.1.1\AndroidManifest.xml:22:5-28:19
@@ -70,39 +70,39 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\laure\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\54a29756ce186b335304a1ff5a43b943\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:9:9-41
 	tools:ignore
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:13:9-48
 	android:roundIcon
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:7:9-36
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:7:9-36
 	android:theme
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.cleanup.todoc.ui.MainActivity
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:14:9-21:20
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:14:9-21:20
 	android:label
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:16:13-45
 	android:name
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:15:13-44
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:15:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:17:13-20:29
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9422adbf4c769861c10f075815a90d9b\design-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9422adbf4c769861c10f075815a90d9b\design-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\5eb6a54fe512aded3428d1597d27058d\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
@@ -171,16 +171,16 @@ MERGED from [com.android.support:print:28.0.0] C:\Users\laure\.gradle\caches\tra
 MERGED from [com.android.support:print:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\9cb8ada685e5cf262381d4bdd40d1d9b\print-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\c461ec8efb0a7b0935b912ac33286b1c\interpolator-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\c461ec8efb0a7b0935b912ac33286b1c\interpolator-28.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		ADDED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Workplace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\laure\Documents\Workspace\Todoc\app\src\main\AndroidManifest.xml
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\laure\.gradle\caches\transforms-2\files-2.1\66afbc1e0a75c843cc9dd1486293d626\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
 	android:authorities
