@@ -12,14 +12,6 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    signingConfigs {
-        todoc_release {
-            storeFile file('C:\\Workplace\\Keys\\kstodoc.jks')
-            storePassword 'kz?3+?*w!Ue=V4PD'
-            keyAlias = 'todocKey01'
-            keyPassword '48jG8bs}C_&~vp~K'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.cleanup.todoc"
@@ -33,7 +25,6 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.todoc_release
         }
         debug {
             testCoverageEnabled true
