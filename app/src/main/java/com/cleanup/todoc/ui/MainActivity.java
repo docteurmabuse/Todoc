@@ -24,6 +24,7 @@ import com.cleanup.todoc.injections.ViewModelFactory;
 import com.cleanup.todoc.model.Project;
 import com.cleanup.todoc.model.Task;
 import com.cleanup.todoc.utils.Utils.SortMethod;
+import com.cleanup.todoc.viewmodel.TaskViewModel;
 
 import java.util.Collections;
 import java.util.Date;

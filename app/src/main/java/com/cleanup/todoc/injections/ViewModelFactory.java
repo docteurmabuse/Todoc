@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 
 import com.cleanup.todoc.repositories.ProjectDataRepository;
 import com.cleanup.todoc.repositories.TaskDataRepository;
-import com.cleanup.todoc.ui.TaskViewModel;
+import com.cleanup.todoc.viewmodel.TaskViewModel;
 
 import java.util.concurrent.Executor;
 
